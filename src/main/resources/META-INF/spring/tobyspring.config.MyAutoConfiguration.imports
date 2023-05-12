@@ -4,3 +4,4 @@ tobyspring.config.autoconfig.DispatcherServletConfig
 tobyspring.config.autoconfig.PropertyPlaceholderConfig
 #tobyspring.config.autoconfig.ServerPropertiesConfig
 tobyspring.config.autoconfig.PropertyPostProcessorConfig
+tobyspring.config.autoconfig.DataSourceConfig
