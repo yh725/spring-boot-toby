@@ -1,18 +1,20 @@
-package tobyspring;
+package tobyspring.helloboot;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import tobyspring.helloboot.HelloRepository;
-import tobyspring.helloboot.HelloService;
-import tobyspring.helloboot.HellobootTest;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.stream.IntStream;
 
-@HellobootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
+@Transactional
 public class HelloServiceCountTest {
-	@Autowired HelloService helloService;
-	@Autowired HelloRepository helloRepository;
+	@Autowired
+	HelloService helloService;
+	@Autowired
+	HelloRepository helloRepository;
 
 	@Test
 	void sayHelloIncreaseCount() {
